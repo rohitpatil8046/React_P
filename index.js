@@ -1,6 +1,19 @@
 import React from "react";
-import  ReactDOM  from "react";
+import ReactDom from 'react-dom';
+import developer , {favprog, myName, myNames} from "./App";
 
-import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'))
+
+
+ReactDom.reander(
+  <>
+  <ol>
+    <li>Rohit Patil</li>
+    <li> {developer} </li>
+    <li>{favprog}</li>
+    <li>{myName()}</li>
+    <li>{myNames()}</li>
+  </ol>
+  </>,
+  document.getElementById("root")
+);
