@@ -1,35 +1,17 @@
-import React,{useEffect, useState} from "react";
+const developer = 'Rohit Patil';
 
-const App = () => {
-    const [num, setnum] = useState(0);
-    const [nums, setnums] = useState(0);
+const favprog = 'React js';
 
-    useEffect(() => {
-        alert("I am clicked");
-        console.log("I am also clicked")
-    }, [num]);
+function myName(){
+ let name = 'Rohit'
+ return name;
+}
 
-    return (
-        <div>
-        <button 
-        onClick={
-            () => {
-            SetNum(num + 1);
-        }}
-        >
-            click me {num}
-            </button>
-            <br />
-            <button 
-        onClick={
-            () => {
-            SetNum(nums + 1);
-        }}
-        >
-            click me {nums}
-            </button>
-            </div>
-    );
-};
+function myNames(){
+ let names = 'Rohit Patil';
+ return names;
+}
 
-export default App;
+export default developer;
+
+export {favprog, myName, myNames};
